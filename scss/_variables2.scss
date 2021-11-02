@@ -1,0 +1,42 @@
+$headerImage: url('../img/m-h-night.jpg');
+$headerTextColor: white;
+$headerTextBackgroundColor: #ff4e33;
+$sectionCardBackground: #3b3f50;
+$sectionCardColor: #fffaf4;
+$bodyBackgroundColor: #21232e;
+$gradient1: #db9f07;
+$gradient2: #922b53;
+$font-sizes: (
+  'footer': 7px,
+  'small': 8px,
+  'smallPlus': 9px,
+  'regular': 12px,
+  'large': 20px,
+  'x-large': 38px
+);
+
+@mixin headerLogoText() {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  span {
+    font-weight: normal;
+    font-size: 6px;
+    &::before {
+      content: '\a';
+      white-space: pre;
+    }
+  }
+}
+
+@mixin button() {
+  background-color: #e3ac00;
+  color: white;
+  border-radius: 2px;
+  width: 76px;
+  height: 26px;
+  border: none;
+  border-color: #e3ac00;
+  transform: translateX(-2px);
+  font-size: 10px;
+}

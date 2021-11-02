@@ -1,0 +1,43 @@
+$headerImage: url('../img/m-h-day.jpg');
+$headerTextColor: black;
+$headerTextBackgroundColor: #14a0c7;
+$sectionCardBackground: #21232e;
+$sectionCardColor: #fffaf4;
+$bodyBackgroundColor: white;
+$gradient1: #629216;
+$gradient2: #2c5ada;
+
+$font-sizes: (
+  'footer': 7px,
+  'small': 8px,
+  'smallPlus': 9px,
+  'regular': 12px,
+  'large': 20px,
+  'x-large': 38px
+);
+
+@mixin headerLogoText() {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  span {
+    font-weight: normal;
+    font-size: 6px;
+    &::before {
+      content: '\a';
+      white-space: pre;
+    }
+  }
+}
+
+@mixin button() {
+  background-color: #699900;
+  color: white;
+  border-radius: 2px;
+  width: 76px;
+  height: 26px;
+  border: none;
+  border-color: #699900;
+  transform: translateX(-2px);
+  font-size: 10px;
+}
